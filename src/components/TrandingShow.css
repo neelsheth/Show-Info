@@ -1,0 +1,16 @@
+.loading{
+    height: 300px;
+    width: 300px;
+
+}
+
+.heading{
+    display: block;
+    padding: 5px;
+    margin: 10px 10px;
+    /* border: 1px solid white; */
+    background-color: black;
+    color: rgb(6, 179, 205);
+    box-shadow: 0 3px 6px rgb(138, 239, 255);
+
+}

@@ -1,0 +1,59 @@
+.mainBody {
+    padding-top: 10px;
+    color: rgb(6, 179, 205);
+    text-align: center;
+}
+
+.radio,
+.serch,
+.btn {
+    margin: 10px;
+}
+
+.btn,
+.radio {
+    cursor: pointer;
+    background-color: rgb(6, 179, 205);
+}
+
+.btn {
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+
+}
+
+.serch{
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(6, 179, 205);
+    /* border-radius: 10px; */
+    /* padding: 5px 0px 5px 0px; */
+    font-size: 25px;
+    /* margin-left: 0px; */
+    border: none;
+    border-style: none;
+    max-width: 80%;
+    border-color: rgb(6, 179, 205);
+    outline: none;
+    
+}
+.serchLogo{
+    background-color: rgb(6, 179, 205);
+    height: 25px;
+    width: 25px;
+    margin-right: 0px;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+.logoBox{
+    display: flex;
+    flex-direction: row;
+    padding: 0px 5px;
+    justify-content: center;
+    background-color: rgb(6, 179, 205);
+    align-items: center;
+    width: 50%;  
+    border-radius: 10px; 
+    margin: 2% 25%; 
+} 
+

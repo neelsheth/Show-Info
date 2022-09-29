@@ -1,0 +1,38 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 30px;
+    justify-content: space-evenly;
+    /* width: 300px; */
+    background-color: black;
+}
+
+.image{
+    height: 295px;
+    width: 210px;
+    border-radius: 10px;
+}
+
+.display{
+    border-radius: 10px;
+    box-shadow: 0 3px 10px 0  rgb(6, 179, 205); 
+    padding: 15px;
+    font-size: 25px;
+
+    height: 340px;
+    width: 240px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+
+}
+.text{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-bottom: 0px;
+}
+.display:hover{
+    background-color:rgba(6, 217, 245, 0.061);
+    /* color: black; */
+}
