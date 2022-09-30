@@ -56,10 +56,12 @@ export default function MainBody() {
                 <label> <input className='radio' type='radio' value='shows' checked={show} onChange={() => radioChang('shows')}></input> Show </label>
                 <label> <input className='radio' type='radio' value='people' checked={actor} onChange={() => radioChang('people')}></input> Actor </label>
             </div>
+            <div className='outsideLogo'>
                 <div className='logoBox'>
                     <img className='serchLogo' src='/serch.png'></img>
                     <input className='serch' ref={serchRef} onChange={find}></input>
                 </div>
+            </div>
             {resData.data.length > 0 ? (<DetailsShow resData={resData} show={show} actor={actor}></DetailsShow>) :<TrandingShow></TrandingShow>
             }
         </div>
