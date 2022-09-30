@@ -44,7 +44,6 @@ export default function MainBody() {
     const find = () => {
         clearInterval(timeoutId)
         const timeout = setTimeout(() => {
-            console.log("serching")
             fatchdata();
         }, 600);
         updateTimeoutId(timeout);
