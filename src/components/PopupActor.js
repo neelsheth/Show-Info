@@ -48,11 +48,11 @@ export default function PopupActor(props) {
                     <div className='info'>
                         <h3>{res.name}</h3>
                         <div className='text'>
-                            {res.gender !== null && <div className='text'>gender : {res.gender}</div>}
-                            {res.country !== null && <div className='text'>country : {res.country.name}</div>}
+                            {res.gender !== null && <div className='text'>Gender : {res.gender}</div>}
+                            {res.country !== null && <div className='text'>Country : {res.country.name}</div>}
 
-                            {res.birthday !== null && <div className='text'>birthday : {res.birthday}</div>}
-                            {res.deathday !== null && <div className='text'>deathday : {res.deathday}</div>}
+                            {res.birthday !== null && <div className='text'>Birthday : {res.birthday}</div>}
+                            {res.deathday !== null && <div className='text'>Deathday : {res.deathday}</div>}
                             {res.birthday !== null && <div className='text'>Age : {age}</div>}
 
                             <br></br>
@@ -60,26 +60,15 @@ export default function PopupActor(props) {
                             {show !== null && (
                                 show.length > 0 &&
                                 <div className='text'>Show :- {
-                                    //show[0]._embedded.show.name
-                                    // <ul>
                                     show.map((data) => (
 
                                         <div>{data._embedded.show.name}</div>
 
                                     ))
-
-                                    // </ul>
-
-
                                 }</div>)}
-
                             <button className='btnpop' onClick={close}>X</button>
-
-
                         </div>
-
                     </div>
-
                 </div>
             </div>
         </div>
