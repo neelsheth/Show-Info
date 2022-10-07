@@ -11,8 +11,6 @@ export default function TrandingShow() {
     const clickedPerson = (id) => {
         setPopup(id._embedded.show)
     }
-
-
     useEffect(() => {
         axios.get('https://api.tvmaze.com/schedule/full')
             .then((response) => setTranding(response))
@@ -23,10 +21,6 @@ export default function TrandingShow() {
     }
 
 
-
-
-
-
     return (
         <>
             <h1 className='heading'>Tranding Show</h1>
@@ -35,20 +29,21 @@ export default function TrandingShow() {
             }
             <div className='container'>
                 {tranding !== null ? (
-                    tranding.data.map((id) => (
-
+                    tranding.data.map((id,idx) => (
+                        <>
+                        {idx < 100 && 
                         <div className='display' onClick={() => clickedPerson(id)}>
                             {id._embedded.show.image === null && <img className='image' src='/no_image.jpg'></img>}
                             {id._embedded.show.image !== null && <img src={id._embedded.show.image.medium}></img>}
                             <div className='text'>{id._embedded.show.name}</div>
                             <div className='text'>{id.name}</div>
                         </div>
+                        }
+                        </>
                     ))
                 ) : <img className='loading' src='/loadingFinal.png'></img>
                 }
             </div>
         </>
-
-
     )
 }
