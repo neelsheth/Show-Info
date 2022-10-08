@@ -19,11 +19,11 @@
     box-shadow: 0 3px 10px 0  rgb(6, 179, 205); 
     padding: 15px;
     font-size: 25px;
-
     height: 340px;
     width: 240px;
     margin-bottom: 20px;
     margin-right: 15px;
+    cursor: pointer;
 
 }
 .text{
